@@ -19,7 +19,13 @@ This code is a non-official implementation of the paper:
 The figure above is a general workflow of the NMF-based speech and noise separation approach. The encoding matrix for the training data, <b>H<sub>train</sub></b> is usually removed although it has some useful information. 
 <br><b>In this project, the penalty terms are proposed based on the
 prior knowledge on <b>H</b> in the separation phase for NMF-based source separation. </b>
-  
+
+### NMF_g: 
+<img src = 'assets/math_NMF_g.gif'>
+
+### NMF_e: 
+<img src = 'assets/math_NMF_e.gif'>
+
 ## How to run?
 ### 
 The subdirectory of project is in the structure of 
@@ -83,4 +89,4 @@ Example usage in the command prompt:
 
 
 ## TODO:
-- [ ] Need to improve performance to get a filtered image in MFCM algorithm.
+- [ ] The performance of the `NMF_g` algorithm should be improved. (It takes too long to get the distribution parameter)
